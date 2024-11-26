@@ -13,6 +13,14 @@ body{
 #global-header{
     margin: 20px 10px;
 }
+nav{
+    display: grid;
+    gap: 1rem;
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+}
 
 #banner{
     display: flex;
@@ -88,7 +96,7 @@ body{
 }
 
 .prod-card{
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
     padding: 10px;
 
@@ -106,14 +114,14 @@ body{
     }
 }
 .prod-pic{
-    max-width: 600px;
+    max-width: 800px;
     padding: 5px 10px;
     img{
         width: 100%;
     }
 }
 .prod-card-aside{    
-    max-width: 600px;
+    max-width: 800px;
     img{
         width: 100%;
     }
@@ -220,7 +228,7 @@ body{
 }
 
 #shop-bag{
-    max-width: 600px;
+    max-width: 800px;
     list-style: none;
     img{
         width: 100%;
@@ -330,5 +338,34 @@ footer{
     a{
         color: #000;
         margin: 15px;
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 800px){
+    
+    #grid-container{
+        display: grid;
+        grid-template-columns: 0.5fr 3fr 0.5fr;
+        grid-template-rows: auto auto auto;
+    }
+    header{
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+    .flex-menu, nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0px 50px;
+    }
+    main{
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+    }
+    footer{
+        display: flex;
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
     }
 }
