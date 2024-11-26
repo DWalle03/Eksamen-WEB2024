@@ -18,9 +18,9 @@
             </form>
             <ul class="flex-menu">
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="#produkter">Produkter</a></li>
+                <li><a href="index.html#produkter">Produkter</a></li>
                 <li><a href="index.html"><img id="main-logo-header" src="https://picsum.photos/id/29/200/200" alt="Mountains"></a></li>
-                <li><a href="#kategorier">Kategorier</a></li>
+                <li><a href="index.html#kategorier">Kategorier</a></li>
                 <li><a href="#bunn">Kontakt oss</a></li>
                 <li><a href="#"><span><i class="fa-regular fa-user"></i></span></a></li>
                 <li><a href="#"><span><i class="fa-regular fa-heart"></i></span></a></li>
@@ -28,38 +28,38 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="checkout">
         <h1>Kasse</h1>
-        <section>
+        <section id="shop-bag">
             <h2>1. SHOPPINGBAGEN DIN</h2>
-            <article class="shop-bag">
+            <article>
                 <img src="https://picsum.photos/id/89/200/200" alt="Gress med trær">
-                <a href="#"><h3>PRODUKT NAVN</h3></a>
+                <a href="product.html"><h3>PRODUKT NAVN</h3></a>
                 <p>Kr 1999</p>
                 <p>Farge: beige</p>
             </article>
-            <article class="shop-bag">
+            <article>
                 <img src="https://picsum.photos/id/89/200/200" alt="Gress med trær">
-                <a href="#"><h3>PRODUKT NAVN</h3></a>
+                <a href="product.html"><h3>PRODUKT NAVN</h3></a>
                 <p>Kr 1999</p>
                 <p>Farge: beige</p>
             </article>
-            <article class="shop-bag">
+            <article>
                 <img src="https://picsum.photos/id/89/200/200" alt="Gress med trær">
-                <a href="#"><h3>PRODUKT NAVN</h3></a>
+                <a href="product.html"><h3>PRODUKT NAVN</h3></a>
                 <p>Kr 1999</p>
                 <p>Farge: beige</p>
             </article>
         </section>
         <section>
-            <form>
+            <form id="pers-info">
                 <h2>2. DINE OPPLYSNINGER</h2>
                 <p>Leveringsadresse</p>
-                <label for="firstname">Fornavn</label>
-                <input type="text" id="firstname" placeholder="Nora*" name="firstname" required>
+                <label for="fornavn">Fornavn</label>
+                <input type="text" id="fornavn" placeholder="Nora*" name="firstname" required>
 
-                <label for="lastname">Etternavn</label>
-                <input type="text" id="lastname" placeholder="Nordman*" name="lastname" required>
+                <label for="etternavn">Etternavn</label>
+                <input type="text" id="etternavn" placeholder="Nordman*" name="lastname" required>
                 
                 <label for="gateadresse">Gateadresse</label>
                 <input type="text" id="gateadresse" placeholder="BRA veien 4*" name="gateadresse" required>
@@ -72,50 +72,51 @@
 
                 <button type="submit">Lagre</button>
                 <a href="#">Avbryt</a>
-              </form> 
+            </form> 
         </section>
         <section>
-            <form>
+            <form id="delivery">
                 <h2>3. LEVERING</h2>
                 <p><strong>LEVERINGSVALG</strong></p>
                 <label><input type="radio" name="valg">
-                    Ekspress Hjemlevering
+                    <strong>Ekspress Hjemlevering</strong>
                 </label>
                 <label><input type="radio" name="valg">
-                    Ekspresspakke til utleveringssted
+                    <strong>Ekspresspakke til utleveringssted</strong>
                 </label>
                 <label><input type="radio" name="valg">
-                    Standard Hjemlevering
+                    <strong>Standard Hjemlevering</strong>
                 </label>
             </form>
         </section>
         <section>
-            <form>
-                <h2>4. BETALING</h2>
-                <p><strong>BETAL MED KORT</strong></p>
-                <p>Kortnummer</p>
-                    <label for="kortnummer">Kortnummer</label>
-                    <input type="number" id="kortnummer" placeholder="342342****4435" name="kortnummer" required>
+            <form id="payment">
+                <div>
+                    <h2>4. BETALING</h2>
+                    <p><strong>BETAL MED KORT</strong></p>
+                        <label for="kortnummer">Kortnummer</label>
+                        <input type="number" id="kortnummer" placeholder="342342****4435" name="kortnummer" required>
 
-                    <label for="utløpsdato">Utløpsdato</label>
-                    <input type="date" id="utløpsdato" name="utløpsdato" required>
+                        <label for="utløpsdato">Utløpsdato</label>
+                        <input type="date" id="utløpsdato" name="utløpsdato" required>
 
-                    <label for="cvc-cvv">CVC/CVV</label>
-                    <input type="password" id="cvc-cvv" placeholder="CVC/CVV" name="cvc-cvv" required>
-                <p>Å betale inkl. mva.</p>
-                <p>1 199kr</p>
-                <button type="submit">Fullfør kjøp</button>
-                <p>
-                    Du bekrefter herved at opplysningene og dokumentene du har oppgitter korrekte og fullstendige. 
-                    Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom
-                    det foreligger uriktige eller ufullstendige opplysninger.
-                </p>
-                <label><input type="checkbox" name="flervalg">
-                    Ja takk! Send nyhetsbrev til meg.
-                </label>
-                <label><input type="checkbox" name="flervalg">
-                    Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
-                </label>
+                        <label for="cvc-cvv">CVC/CVV</label>
+                        <input type="password" id="cvc-cvv" placeholder="CVC/CVV" name="cvc-cvv" required>
+                </div>
+                    <p>Å betale inkl. mva.</p>
+                    <p>1 199kr</p>
+                    <button type="submit">Fullfør kjøp</button>
+                    <p>
+                        Du bekrefter herved at opplysningene og dokumentene du har oppgitter korrekte og fullstendige. 
+                        Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom
+                        det foreligger uriktige eller ufullstendige opplysninger.
+                    </p>
+                    <label style="margin-top: 15px;"><input type="checkbox" name="flervalg">
+                        Ja takk! Send nyhetsbrev til meg.
+                    </label>
+                    <label style="margin-bottom: 50px;"><input type="checkbox" name="flervalg">
+                        Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+                    </label>
             </form>
         </section>
     </main>

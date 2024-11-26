@@ -37,6 +37,11 @@ body{
         width: 250px;
         border: none;
         background-color: #fff;
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: #000;
+        }
     }
 }
 
@@ -72,10 +77,18 @@ body{
     width: fit-content;
     background-color: #fff;
     border: 1px solid #000;
+    list-style: none;
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+}
+#produkter button:hover{
+    background-color: #aaa;
 }
 
 .prod-card{
-    max-width: 428px;
+    max-width: 600px;
     width: 100%;
     padding: 10px;
 
@@ -93,15 +106,14 @@ body{
     }
 }
 .prod-pic{
-    max-width: 428px;
+    max-width: 600px;
     padding: 5px 10px;
-
     img{
         width: 100%;
     }
 }
 .prod-card-aside{    
-    max-width: 428px;
+    max-width: 600px;
     img{
         width: 100%;
     }
@@ -159,7 +171,6 @@ body{
     border: 1px solid #000;
     padding: 10px;
     margin: 10px;
-
     h2{
         text-align: center;
         padding: 50px;
@@ -186,6 +197,9 @@ body{
     p{
         font-size: 16px;
     }
+    img{
+        max-width: 150px;
+    }
 }
 
 .breadcrumb{
@@ -194,11 +208,101 @@ body{
     padding: 50px 10px 10px;
     gap: 1rem;
     margin: 0;
-
     a{
         text-decoration: none;
         color: #000;
     }
+}
+
+#checkout{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#shop-bag{
+    max-width: 600px;
+    list-style: none;
+    img{
+        width: 100%;
+        padding: 20px 0px;
+    }
+    h2{
+        margin-top: 50px;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+    p, h3{
+        margin: 0;
+    }
+}
+
+#pers-info{
+    display: grid;
+
+    label{
+        padding: 5px 0px;
+    }
+    input{
+        padding: 15px;
+    }
+    button{
+        padding: 15px;
+        margin: 30px 0px 10px 0px;
+        width: 75px;
+        background-color: #3c3c3c;
+        color: #fff;
+    }
+}
+#pers-info h2{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+#delivery{
+    display: grid;
+
+    label{
+        padding-bottom: 30px;
+    }
+}
+#delivery h2{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#payment{
+    display: grid;
+
+    p{
+        margin: 0px;
+    }
+    button{
+        padding: 15px;
+        margin-bottom: 15px;
+        width: 100px;
+        background-color: #3c3c3c;
+        color: #fff;
+    }
+}
+#payment div{
+    display: grid;
+    margin-bottom: 40px;
+
+    label{
+        padding: 5px 0px;
+    }
+    input{
+        padding: 15px;
+    }
+    p{
+        margin: 0;
+    }
+}
+#payment h2{
+    margin-top: 30px;
+    margin-bottom: 25px;
 }
 
 footer{
