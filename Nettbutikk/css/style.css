@@ -348,7 +348,9 @@ footer{
         display: grid;
         grid-template-columns: 0.5fr 3fr 0.5fr;
         grid-template-rows: auto auto auto;
+        max-width: 1200px;
     }
+    
     header{
         grid-column: 1 / 4;
         grid-row: 1 / 2;
